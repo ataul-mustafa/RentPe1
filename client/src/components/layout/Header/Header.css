@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+/* styling hambar */
+
+.navBar {
+    position: fixed;
+    z-index: 2;
+}
+
+.hamBarLinks .nav-bar,
+.no-nav-bar {
+    background-image: linear-gradient(to top, #e9f7f5, #64cfbf);
+    width: 18vmax;
+    height: fit-content;
+    padding: 5vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: fixed;
+    left: -18vmax;
+    z-index: 5;
+}
+
+.hamBarLinks .nav-bar {
+    left: 0;
+    transition: 0.3s ease;
+}
+
+.hamBarLinks .nav-bar li,
+.no-nav-bar li {
+    width: fit-content;
+    margin: auto;
+    margin-left: 0;
+    font: 700 1.2vmax "Roboto";
+    padding: 1vmax 0;
+    /* border-bottom: 1px solid rgb(121, 107, 107); */
+}
+
+.hamBarLinks .nav-bar li a,
+.no-nav-bar li a {
+    text-decoration: none;
+    color: rgb(59, 50, 50);
+    text-transform: capitalize;
+}
+
+.hamBarLinks .nav-bar li a:hover,
+.no-nav-bar li a:hover,
+.hamBarLinks .nav-bar li a:active,
+.no-nav-bar li a:active {
+    color: #088178;
+    transition: 0.3s ease;
+}
+
+.hamBarLinks .no-nav-bar {
+    position: absolute;
+    left: -20vmax;
+    transition: 0.3s ease;
+}
+
+.hamBarLinks .cross {
+    position: absolute;
+    right: 1vmax;
+    top: 1vmax;
+    cursor: pointer;
+}
+
+.hamBarLinks .cross:hover {
+    color: rgb(97, 95, 93);
+}
+
+/* Desinging Navbar */
+
+nav .navBar {
+    /* background-image: linear-gradient(to right, #e9f7f5, h6); */
+    background-color: #e9f7f5;
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 9vmax 0 1vmax;
+    box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.2) ;
+}
+
+.navBar .section1 {
+    width: 35%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navBar .section1 .logo {
+    width: 130px;
+    margin-top: 0.8vmax;
+}
+
+.navBar .section1 .hambar {
+    margin: auto 2vmax;
+}
+
+.navBar .section2 {
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: auto;
+}
+
+.navBar .section2 .searchBar {
+    margin: auto;
+    padding: 0.2vmax 0.5vmax 0.2vmax 4vmax;
+    background-color: #fff;
+    border: 1px solid rgb(180, 164, 164);
+    border-radius: 1vmax;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+.navBar .section2 .searchBar:hover {
+    /* background-color: #ebf1f1; */
+    box-shadow: 2px 2px 5px 4px rgba(0, 0, 0, 0.2) inset;
+    transition: 0.2s ease;
+}
+
+.navBar .section2 .links {
+    display: flex;
+    flex-direction: row;
+    width: 18vmax;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.navBar .section2 .links a {
+    text-decoration: none;
+    color: rgb(59, 50, 50);
+    padding-right: 0.7vmax;
+    border-right: 2px solid rgb(24, 169, 226);
+    font: 500 1.2vmax "Roboto";
+
+}
+
+.navBar .section2 .links .lastChild {
+    border-right: none;
+}
+
+.navBar .section2 .links a:hover,
+a:active {
+    color: #a8a0a0;
+    transition: 0.3s ease;
+}
+
+.navBar .section3 {
+    display: flex;
+    width: 30%;
+    margin: auto;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.navBar .section3 .accountIcon,
+.cartIcon {
+    font-size: 3vmax;
+    color: rgb(59, 50, 50);
+}
+
+.navBar .section3 .cartIcon {
+    font-size: 2.6vmax;
+    background-color: transparent;
+    color: rgb(59, 50, 50);
+    border: 1px solid #088178;
+    border-radius: 50%;
+    padding: 6px;
+}
+
+.navBar .section3 .accountIcon {
+    margin-right: 1.5vmax;
+}
+
+.navBar .section3 .accountIcon:hover,
+.cartIcon:hover {
+    color: #a8a0a0;
+    transition: 0.3s ease;
+}
+
+.navBar .section3 .cartIcon:hover {
+    color: #c7dadd;
+    background-color: #295f5c;
+    transition: 0.3s ease;
+}
+
+.cartWithQuantity {
+    position: relative;
+}
+
+.section3 .quantity {
+    position: absolute;
+    bottom: -5px;
+    left: 28px;
+    font: 400 1vmax "Roboto";
+    padding: 4px;
+    border-radius: 20%;
+    background-color: #088178;
+    color: #fff;
+}
+
+@media screen and (max-width: 700px) {
+
+    .hamBarLinks .nav-bar,
+    .no-nav-bar {
+        width: 30vmax;
+        height: 80vh;
+        left: -30vmax;
+    }
+
+    .hamBarLinks .nav-bar {
+        left: 0;
+        transition: 0.3s ease;
+    }
+
+    .hamBarLinks .no-nav-bar {
+        left: -30vmax;
+        transition: 0.3s ease;
+    }
+
+    .hamBarLinks .nav-bar li,
+    .no-nav-bar li {
+        font: 600 2.5vmax "Roboto";
+    }
+
+    .hamBarLinks .cross {
+        right: 4vmax;
+        top: 4vmax;
+    }
+
+    .navBar .section1 {
+        width: fit-content;
+    }
+
+    .navBar .section1 .logo {
+        width: 90px;
+        margin-top: 2vmax;
+    }
+
+    .navBar .section1 .hambar {
+        margin: auto 1vmax;
+    }
+
+    .navBar .section2 {
+        align-items: flex-end;
+        align-content: flex-end;
+    }
+
+    .navBar .section2 .searchBar {
+        padding: 0;
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .navBar .section2 .links {
+        display: none;
+    }
+
+    .navBar .section2 .links a {
+        text-decoration: none;
+        color: rgb(59, 50, 50);
+        padding-right: 0.7vmax;
+        border-right: 2px solid rgb(255, 255, 255);
+        font: 500 1.2vmax "Roboto";
+
+    }
+
+    .navBar .section3 .accountIcon,
+    .cartIcon {
+        font-size: 4vmax;
+        color: rgb(59, 50, 50);
+    }
+    .navBar .section3 .cartIcon {
+        font-size: 3.5vmax;
+    }
+
+    .section3 .quantity {
+        bottom: -5px;
+        left: 17px;
+    }
+    
+}

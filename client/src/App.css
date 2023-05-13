@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+/* chrome safari edge opera  */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* firefox */
+input[type="number"]{
+    -moz-appearance: textfield;
+    appearance: none;
+}
+
+.greenColor{
+    color: green;
+}
+.redColor{
+    color: red;
+}

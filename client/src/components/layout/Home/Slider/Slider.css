@@ -1,0 +1,118 @@
+ /* .mySwiper{
+    margin-left: 9vmax;
+  } */
+  .swiper {
+    
+    width: 99vw;
+    height: 17vw;
+    position: absolute;
+    top: 63px;
+    box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.2) ;
+
+  }
+  
+  .swiper-slide {
+    width: 100%;
+    /* text-align: center; */
+    font-size: 18px;
+    /* background-color: #d0b7d4; */
+    background-color: #fff;
+  
+    /* Center slide text vertically */
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .swiper-slide .text{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 50%;
+    height: 100%;
+  }
+
+  .swiper-slide .text .heading{
+    color: red;
+    margin: 1vmax 0;
+  }
+
+  .swiper-slide .text .subheading{
+    color: #e9f7f5;
+    font-size: 1.2vmax;
+    width: 80%;
+  }
+
+  .swiper-slide .text .btn{
+    margin: 1.5vmax 0%;
+    margin-left: 30%;
+    background-color: #e9f7f5;
+    color: rgb(44, 44, 95);
+    padding: 0.8vmax 1vmax;
+    font-size: 1.2vmax;
+    border: none;
+    border-radius: 0.8vmax;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.3) inset;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .swiper-slide .text .btn:hover{
+    background-color: #64cfbf;
+    color: blue;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.3);
+    transition: 0.3 ease;
+  }
+  
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (max-width: 600px) {
+    .mySwiper{
+      margin: 0;
+    }
+    .swiper {
+        width: 100%;
+        height: 12%;
+        top: 62px;
+      }
+
+      .swiper-slide img {
+        object-fit: contain;
+      }
+
+      .swiper-slide .text{
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        width: 60%;
+        height: 100%;
+      }
+    
+      .swiper-slide .text .heading{
+        color: red;
+        margin: 0.4vmax 0;
+        font-size: 2.4vmax;
+      }
+    
+      .swiper-slide .text .subheading{
+        color: rgb(90, 78, 78);
+        font-size: 1vmax;
+        width: 80%;
+      }
+    
+      .swiper-slide .text .btn{
+       display: none;
+      }
+  }
+  

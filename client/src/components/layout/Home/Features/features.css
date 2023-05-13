@@ -1,0 +1,56 @@
+/* --------------------Styling features Section---------------------- */
+
+
+#feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto 10px;
+}
+
+/* .head{
+    width: 100vw;
+} */
+
+.head > .header{
+    width: fit-content;
+    margin: 3vmax auto;
+    font: 500 2vmax "Roboto";   
+    border-bottom: 1px solid rgb(0, 0, 0);
+    padding: 0 5vmax 1vmax 5vmax;
+    color: rgb(95, 69, 69);
+}
+
+#feature .fe-box {
+    width: 12vw;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 5px;
+}
+
+#feature .fe-box:hover {
+    box-shadow: 30px 30px 100px rgba(15, 9, 129, 0.15);
+}
+
+#feature .fe-box h6 {
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+}
+
+#feature .fe-box img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    #feature .fe-box{
+        width: 25vw;
+        margin: 1vmax;
+    }
+}

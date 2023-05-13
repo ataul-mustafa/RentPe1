@@ -1,0 +1,18 @@
+/* .promot {
+    position: absolute;
+    top
+} */
+
+.promot > .rsis-container {
+    height: 10vh;
+    width: 100vw;
+}
+
+.promot > .rsis-image {
+      background-size: contain !important;
+}
+
+.promot > .imageSlider {
+    height: 10vh;
+    width: 100vw;
+}

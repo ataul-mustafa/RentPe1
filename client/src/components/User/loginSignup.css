@@ -1,0 +1,128 @@
+.loginSignup{
+    width: 100vw;
+    height: 100vh;
+    background-color: #e9f7f5;
+    position: absolute;
+    top: 60px;
+}
+
+#wrapperBox{
+    width: 355px;
+    margin: 5vmax auto auto auto;
+    box-shadow: 5px 2px 5px 2px rgb(0 0 0/ 0.6);
+    padding: 25px 35px;
+    display: flex;
+    flex: 1;
+    overflow: auto;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+#wrapperBox > input[type='submit']{
+    background-color: #64cfbf;
+    color: rgb(59, 50, 50);
+    font: 600 1.5vmax "Roboto";
+}
+
+#wrapperBox > input[type='submit']:hover{
+    background-color: #e9f7f5;
+    transition: 0.3s ease;
+}
+
+#wrapperBox > div, #wrapperBox > button, #wrapperBox > p{
+    margin-top: 20px;
+}
+
+.forgotPass {
+    margin-left: 140px;
+}
+
+.forgotPass:hover{
+    color: rgba(48, 41, 41, 0.452);
+    transition: 0.2s ease;
+}
+
+
+#registerImage{
+    width: 100%;
+    display: flex;
+    margin: 1.5vmax 0 0 0;
+} 
+
+#registerImage > img{
+    width: 3vmax;
+    height: 3vmax;
+    border-radius: 100%;
+    margin: 0 0.3vmax 0 0;
+}
+
+#registerImage > input {
+    display: flex;
+    padding: 0;
+    margin: 0.2vmax 0 0 0;
+}
+#registerImage > input::file-selector-button{
+    cursor: pointer;
+    width: 100%;
+    height: 5vh;
+    margin: 0%;
+    border: 0.5px solid rgb(119, 106, 106);
+    border-radius: 5px;
+    font: 400 0.8vmax cursive;
+    transition: all 0.5s;
+    color: rgba(0, 0, 0, 0.625);
+    background-color: rgb(255, 255, 255);
+}
+
+#registerImage > input::file-selector-button:hover{
+    background-color: rgba(135, 158, 187, 0.521);
+}
+
+@media screen and (max-width: 600px) {
+    .loginSignup{
+        top: 2rem;
+    }
+    #registerImage > img{
+        width: 5vmax;
+        height: 5vmax;
+        margin: 0;
+    }
+
+    #registerImage > input::file-selector-button{
+        font: 600 1.5vmax cursive;
+    }
+}
+
+#loginButton{
+    background-color: #2825b8;
+    color: #fff;
+    height: 48px;
+    border-radius: 3px;
+    font: 500 20px "Roboto";
+    padding-left: 3.5%;
+    margin-top: 45px;
+    cursor: pointer;
+    box-shadow: 3px 3px 5x 3px rgba(0, 0, 0, 0.25);
+    border: none
+};
+
+#loginButton:hover{
+    background-color: red;
+}
+
+#signupButton{
+    background-color: red;
+    color: #fff;
+    height: 48px;
+    border-radius: 3px;
+    font: 500 20px "Roboto";
+    padding-left: 3.5%;
+    margin-top: 45px;
+    cursor: pointer;
+    box-shadow: 3px 3px 5x 3px rgba(0, 0, 0, 0.25);
+    border: none
+};
+
+#signupButton:hover{
+    background-color: red;
+}

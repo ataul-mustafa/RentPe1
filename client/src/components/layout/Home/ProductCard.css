@@ -1,0 +1,102 @@
+.productCard {
+    width: 16vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-decoration: none;
+    color: rgb(48, 48, 48);
+    margin: 1vmax;
+    transition: all 0.5s;
+    padding-bottom: 0.5vmax;
+    /* border: 1px solid rgb(207, 190, 190); */
+    border-radius: 7px;
+    box-shadow: 0.1vmax 0.1vmax 0.5vmax 0.1vmax rgba(0, 0, 0, 0.3);
+}
+
+.productCard > img{
+    width: 14vmax;
+    height: 14vmax;
+    margin: 1vmax auto;
+    border-radius: 5px;
+}
+.productCard > div {
+    margin: 0.5vmax 1vmax;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.productCardSpan{
+    margin: 1vmax 0.5vmax;
+    font: 300 0.7vmax "Roboto";
+}
+
+.productCard > p{
+    font-family: "Roboto";
+    font-size: 1.2vmax;
+    margin: 1vmax 1.2vmax;
+    margin-bottom: 0;
+}
+
+.productCard > span{
+    margin: 0.5vmax 1.2vmax;
+    font-family: "Franklin Gothic Medium","Arial Narrow", Arial, Helvetica, sans-serif;
+    color: tomato;
+    font-size: 1vmax;
+}
+
+.productCard > span > #location{
+    color: rgb(103, 77, 219);
+    font: 400 0.8vmax "Roboto";
+    position: relative;
+    right: -97px;
+    bottom: 10px;
+}
+
+.productCard:hover{
+    box-shadow: 0.5vmax 0.5vmax 1vmax 0.5vmax rgba(80, 56, 218, 0.5);
+    transform: translateY(-1vmax);
+}
+
+@media screen and (max-width: 600px) {
+    .productCard{
+        width: 17vmax;
+        margin: 0.7vmax;
+    }
+
+    .productCard > img {
+        width: 16vmax;
+        height: 16vmax;
+        margin: 0.4vmax;
+    }
+    .productCard > p{
+        font-size: 1.7vmax;
+    }
+    .productCard > div{
+        margin: 0vmax;
+        display: block;
+    }
+    .productCard > div > .stars{
+        font-size: large;
+        margin: 1vmax 0 1vmax 0.4vmax;
+    }
+    .productCard > span{
+        font-size: 1.5vmax;
+    }
+    .productCardSpan{
+        display: none;
+    }
+    .productCard > div > span{
+        margin: 0 0.3vmax;
+        font: 300 1vmax "Roboto";
+    }
+
+    .productCard > span > #location{
+        font: 400 0.8vmax "Roboto";
+        right: -45px;
+        bottom: 10px;
+    }
+    .productCard > span > #location > .icon{
+        font-size: 2vmax;
+    }
+}

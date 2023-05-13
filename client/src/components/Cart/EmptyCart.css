@@ -1,0 +1,44 @@
+.emptyCart{
+    position: absolute;
+    top: 15vmax;
+    width: 100vw;
+}
+
+.emptyCartBox{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    align-items: center;
+    align-content: space-around;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0.4vmax 0.4vmax 1vmax 0.3vmax rgba(0, 0, 0, 0.3) ;
+}
+
+.emptyCartBox > .icon {
+    font: 700 4vmax green;
+    color: red;
+}
+.emptyCartBox > p{
+    font: 600 1.5vmax "Roboto";
+    color: green;
+    margin-bottom: 10px;
+}
+
+.emptyCartBox > a {
+    background-color: rgb(16, 16, 143);
+    color: #fff;
+    font: 400 1vmax "Roboto";
+    text-decoration: none;
+    border: none;
+    padding: 0.5vmax 0.9vmax;
+    border-radius: 1vmax;
+    transition: all 0.3s;
+}
+
+.emptyCartBox > a:hover {
+    background-color: red;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+li{
+    list-style: none;
+}
+
+
+.main-nav{
+    position: fixed;
+    height: 8.4rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+    background-color: #fff;
+}
+
+
+.serchBarAndCart{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-nav .serchBarAndCart .RentPe-Logo {
+    width: 100%;
+    display: flex;
+    margin: 0 1vmax;
+}
+
+.main-nav .serchBarAndCart .RentPe-Logo .upperNav1{
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main-nav .serchBarAndCart .RentPe-Logo .upperNav2{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-nav .cart{
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1vmax 0 5vmax;
+}
+
+
+
+.main-nav .serchBarAndCart .RentPe-Logo .search{
+    width: 80%;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+}
+
+
+.main-nav .serchBarAndCart .RentPe-Logo .searchTerm{
+    width: 90%;
+    border: 3px solid #57B1FF;
+    border-right: none;
+    padding: 10px;
+    height: 30px; 
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #57B1FF;
+}
+
+.main-nav .serchBarAndCart .RentPe-Logo .searchTerm:focus{
+    color: #ffffff;
+    background: #b3b9b9;
+    transition: 0.3s ease-in-out;
+}
+
+
+.main-nav .serchBarAndCart .RentPe-Logo .searchbutton{
+    width: 10%;
+    border: 3px solid #57B1FF;
+    height: 30px;
+    border-radius: 0 5px 5px 0;
+    color: #fff;
+    background: #57B1FF;
+    /* padding: 10px; */
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+}
+.main-nav .serchBarAndCart .RentPe-Logo .search .searchbutton:hover{
+    background: #064b88;
+    color: aquamarine;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2) inset;
+    transition: 0.2s ease-out;
+}
+
+
+
+.main-nav .serchBarAndCart .cart .shoppingCart{
+    font-size: 30px;
+    color: #57B1FF;
+}
+
+.shoppingCart > p {
+    display: inline-block;
+    font: 400 1vmax "Roboto";
+    color: green;
+}
+
+
+.main-nav .nav .no-nav-bar{
+    padding: 15px;
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(to left, #57B1FF, #2b37d6);
+    top: 5rem;
+    z-index: 2;
+}
+.main-nav .nav .nav-bar{
+    padding: 15px;
+    width: 30%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #57B1FF;
+    box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.2); 
+    position: absolute;
+    top: -65vh;
+    transition: 0.3s ease;
+    z-index: 11;
+}
+
+.main-nav div .no-nav-bar li a, .nav-bar li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.main-nav div .nav-bar li, .no-nav-bar li{
+    font-weight: 500;
+    padding: 10px;
+    transition: 0.3s ease;
+}
+
+.main-nav div .no-nav-bar li:link, li:active, li:hover{
+    background: red;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px 7px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease;
+}
+
+.main-nav div .logo{
+    width: 200px;
+}
+
+/* .main-nav .serchBarAndCart .RentPe-Logo .hambar{
+    display: none;
+} */
+
+.main-nav .nav .cross{
+    display: none;
+}
+
+
+
+/* Responsiveness */
+@media screen and (max-width: 775px) {
+    .main-nav{
+        height: 3rem;
+    }
+    /* .main-nav .serchBarAndCart .RentPe-Logo .hambar{
+        display: inline-block;
+        font-size: 25px;
+        margin-left: 1.5rem;
+        color: #57B1FF;
+        border: 1px solid #57B1FF;
+        padding: 3px 3px 0 3px;
+        border-radius: 4px;
+    } */
+    .serchBarAndCart{
+        box-shadow: 0 5px 10px 7px rgba(0, 0, 0, 0.2);
+    }
+
+    .main-nav div .logo{
+        width: 150px;
+    }
+
+    .main-nav .nav .nav-bar{
+        padding: 15px;
+        width: 30%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.2); 
+        position: absolute;
+        top: 0;
+        transition: 0.3s ease;
+        z-index: 2;
+    }
+
+    .main-nav .nav .no-nav-bar{
+        padding: 15px;
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.2); 
+        position: absolute;
+        top: -65vh;
+        transition: 0.3s ease;
+    }
+
+
+
+
+    .main-nav .nav .cross{
+        display: inline-block;
+        position: relative;
+        left: 80%;
+        font-size: 20px;
+    }
+    
+    
+
+    .main-nav div .nav-bar li{
+        font-weight: 500;
+        padding: 10px;
+        transition: 0.3s ease;
+    }
+    .shoppingCart{
+        display: flex;
+    }
+
+    .shoppingCart > p {
+        position: relative;
+        top: 2vmax;
+        font: 400 2vmax "Roboto";
+        color: green;
+    }
+}
+
+
+.upperNav1{
+    flex-shrink: 2;
+}
+
+.upperNav2{
+    flex-shrink: 1;
+}
+.cart{
+    flex-shrink: 2;
+}
+
+
+@media screen and (min-width: 0) and (max-width: 470px){
+
+    .search{
+        width: 70%;
+        justify-content: space-around;
+    }
+    .search .button{
+        padding: 1vmax;
+    }
+    .main-nav div .logo{
+        width: 115px;
+    }
+    .serchBarAndCart{
+        width: 100%;
+        justify-content: space-between;
+    } 
+    .main-nav .nav .nav-bar{
+        padding: 15px;
+        width: 100%;
+        height: 100vh;
+        transition: 0.3s ease;
+    }
+    .RentPe-Logo{
+        margin: 0 ;
+    }
+}

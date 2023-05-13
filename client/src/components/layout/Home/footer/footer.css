@@ -1,0 +1,88 @@
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: black;
+    color: aliceblue;
+}
+
+.footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px 7vmax;
+    width: fit-content;
+}
+
+.footer .col p {
+    font-size: 14px;
+    margin: 8px 0;
+    font-weight: 500;
+}
+
+.footer .col h4 {
+    margin: 20px 0;
+}
+
+.footer .footer-logo {
+    margin: 20px 0 0 0;
+    height: 50px;
+}
+
+.footer .col .follow .icon ion-icon {
+    margin: 0 3px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.footer .col a {
+    text-decoration: none;
+    color: #465b52;
+    font-size: 14px;
+    margin-bottom: 16px;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.footer .col .row {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 0;
+    /* width: 70%; */
+    /* margin-left: -10px; */
+}
+
+.footer .col .row img {
+    border: 1px solid #465b52;
+    margin-right: 5px;
+    padding: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer .col .follow .icon ion-icon:hover,
+.footer .col a:hover {
+    color: #088178;
+}
+
+.footer .install p {
+    margin: 10px 0;
+}
+
+.footer .copyright {
+    width: 100%;
+    text-align: center;
+    color: #ddc9c9;
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        color: aliceblue;
+    }
+    .footer .col {
+        width: 70vw;
+    }
+}
