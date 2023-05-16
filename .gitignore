@@ -9,9 +9,6 @@
 # testing
 /client/coverage
 
-# production
-/client/build
-
 # misc
 /server/config/config.env
 /client/.DS_Store
