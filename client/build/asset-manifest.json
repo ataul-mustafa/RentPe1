@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2ee9a159.chunk.css",
+    "main.js": "/static/js/main.a8167241.chunk.js",
+    "main.js.map": "/static/js/main.a8167241.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.4d483e6d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.4d483e6d.js.map",
+    "static/css/2.45d6319e.chunk.css": "/static/css/2.45d6319e.chunk.css",
+    "static/js/2.958469fa.chunk.js": "/static/js/2.958469fa.chunk.js",
+    "static/js/2.958469fa.chunk.js.map": "/static/js/2.958469fa.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.45d6319e.chunk.css.map": "/static/css/2.45d6319e.chunk.css.map",
+    "static/css/main.2ee9a159.chunk.css.map": "/static/css/main.2ee9a159.chunk.css.map",
+    "static/js/2.958469fa.chunk.js.LICENSE.txt": "/static/js/2.958469fa.chunk.js.LICENSE.txt",
+    "static/media/Genetrator.dc21c894.jpg": "/static/media/Genetrator.dc21c894.jpg",
+    "static/media/Machinery.6a61abbd.jpg": "/static/media/Machinery.6a61abbd.jpg",
+    "static/media/RentPe-Logo.892c5dd1.png": "/static/media/RentPe-Logo.892c5dd1.png",
+    "static/media/Transport.23b6da4b.jpg": "/static/media/Transport.23b6da4b.jpg",
+    "static/media/allCat.dc46c585.jpg": "/static/media/allCat.dc46c585.jpg",
+    "static/media/books_logo.62dd4da3.jpg": "/static/media/books_logo.62dd4da3.jpg",
+    "static/media/construction.20763458.jpg": "/static/media/construction.20763458.jpg",
+    "static/media/electronics.047cca1f.jpg": "/static/media/electronics.047cca1f.jpg",
+    "static/media/f1.2570c5d9.png": "/static/media/f1.2570c5d9.png",
+    "static/media/f2.209743eb.png": "/static/media/f2.209743eb.png",
+    "static/media/f3.c2387adb.png": "/static/media/f3.c2387adb.png",
+    "static/media/f4.ad9a7e8f.png": "/static/media/f4.ad9a7e8f.png",
+    "static/media/f5.7390d944.png": "/static/media/f5.7390d944.png",
+    "static/media/f6.411f54a7.png": "/static/media/f6.411f54a7.png",
+    "static/media/furniture.43dafe78.jpg": "/static/media/furniture.43dafe78.jpg",
+    "static/media/party.f11219b7.jpg": "/static/media/party.f11219b7.jpg",
+    "static/media/sports.12462a9a.jpg": "/static/media/sports.12462a9a.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4d483e6d.js",
+    "static/css/2.45d6319e.chunk.css",
+    "static/js/2.958469fa.chunk.js",
+    "static/css/main.2ee9a159.chunk.css",
+    "static/js/main.a8167241.chunk.js"
+  ]
+}
