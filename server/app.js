@@ -48,3 +48,6 @@ app.use(errormiddleware)
 
 
 module.exports = app;
+
+
+// mongodb+srv://ataulmustafa143:yxroiiMO3otIn5jT@cluster0.3omutgq.mongodb.net/

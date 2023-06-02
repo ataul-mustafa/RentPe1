@@ -6,12 +6,9 @@
   }
   
   .sidebar > a:first-child {
-    padding: 0;
+    padding: 2em;
   }
-  .sidebar > a > img {
-    width: 100%;
-    transition: all 0.5s;
-  }
+  
   
   .sidebar > a > img:hover {
     filter: drop-shadow(0 0 10px tomato);

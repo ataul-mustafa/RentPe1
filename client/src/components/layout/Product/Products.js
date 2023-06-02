@@ -24,6 +24,7 @@ const Products = () => {
     const [price, setPrice] = useState([0, 25000]);
     const [category, setCategory] = useState("");
     const [ratings, setRatings] = useState(0);
+    const [hcat, setHCat] = useState(cate);
 
     const { products, loading, error, productsCount, resultPerPage, filteredProductsCount } = useSelector((state) => state.products);
 
@@ -45,14 +46,16 @@ const Products = () => {
             alert.show(error);
             dispatch(clearErrors());
         } 
-        if(category){
-            setCategory(category);
-        }else if(cate){
-            setCategory(cate);
-        }
-        
+        if(hcat != null && category !== hcat){
+            setCategory(hcat);
+        } 
+
         dispatch(getProduct(keyword, currentPage, price, category, ratings));
-    }, [dispatch, keyword, currentPage, price, category, ratings, error, alert, cate])
+        if(hcat != null && category !== hcat){
+            setHCat(null)
+        } 
+        
+    }, [dispatch, hcat, keyword, currentPage, price, category, ratings, error, alert, cate])
     // console.log(count);
     return ( 
         <Fragment>

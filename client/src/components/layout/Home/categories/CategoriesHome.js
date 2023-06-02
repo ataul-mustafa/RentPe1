@@ -51,6 +51,7 @@ export function CategoriesHome() {
 export function Categories() {
     return (
         <Fragment>
+            <div className='catContainer'>
             <div className='heading'>
             <h1>Categories</h1>
             </div>
@@ -60,6 +61,7 @@ export function Categories() {
                         <CategoryCard image={images[index]} name={category} key={index} />
                     ))
                 }
+            </div>
             </div>
         </Fragment>
     )

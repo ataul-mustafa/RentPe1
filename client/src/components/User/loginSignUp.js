@@ -21,6 +21,7 @@ import { useAlert } from 'react-alert'
 import { useDispatch, useSelector } from 'react-redux';
 import { clearErrors, login, register } from '../../actions/userAction.js'
 import { useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 const Component = styled(Box)`
@@ -196,7 +197,7 @@ const Login = () => {
                                   <input id='loginButton' type='submit' value='Login' />
                                   <Text style={{ textAlign: 'center' }}>OR</Text>
                                   <SignupButton onClick={() => toggleSignup()} style={{ marginBottom: 50 }}>Create an account</SignupButton>
-                                  <a href='/password/forgot' className='forgotPass'>Forgot Password ?</a>
+                                  <Link to='/password/forgot' className='forgotPass'>Forgot Password ?</Link>
                               </form> :
                               <form id='wrapperBox' onSubmit={registerSubmit} encType="multipart/form-data">
                                   <TextField value={name} onChange={registerDataChange} variant="standard" name='name' label='Enter Name' required />

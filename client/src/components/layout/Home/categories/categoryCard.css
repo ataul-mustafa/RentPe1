@@ -55,6 +55,9 @@
 }
 
 @media screen and (max-width: 600px) {
+    .catContainer{
+        padding-top: 27px;
+    }
     .category{
         width: 98%;
     }

@@ -50,9 +50,9 @@
     z-index: 2;
     display: block;
     padding: 0.5vmax;
-    border-radius: 2vmax;
-    height: 92%;
-    width: 98%;
+    border-radius: 2.5vmax;
+    height: 96%;
+    width: 99%;
     background-color: #194569;
 }
 @keyframes animate-border{

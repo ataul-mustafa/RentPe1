@@ -7,13 +7,7 @@ import Loader from "../layout/Loader";
 import { TextField } from "@mui/material";
 import MetaData from "../layout/metaData";
 
-
-
-
 const ForgotPassword = () => {
-
-
-
     const dispatch = useDispatch();
     const alert = useAlert();
 
