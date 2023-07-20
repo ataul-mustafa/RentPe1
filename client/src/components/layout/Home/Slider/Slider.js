@@ -65,9 +65,9 @@ export default function Slider() {
          modules={[Pagination, Navigation, Autoplay]}
          className="mySwiper"
        >
-            {banners && banners.map(item => (
+            {banners && banners.map((item, index) => (
 
-              <SwiperSlide key={item.productId}>
+              <SwiperSlide key={index}>
                 <Link to={`/product/${item.productId}`}>
                   <img src={item.image.url} alt="slide1" />
                   <div className="text">

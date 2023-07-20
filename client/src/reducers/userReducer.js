@@ -101,7 +101,7 @@ export const userReducer = (state = { user: {}}, action) =>{
             }
 
         default:
-            return state    
+            return state;
         }
 }
 

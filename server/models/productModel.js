@@ -109,3 +109,20 @@ const productSchema = new mongoose.Schema({
 const Product = mongoose.model("Product", productSchema);
 
 module.exports = Product;
+
+
+// const StudentSchema = new mongoose.Schema({
+//     name: {
+//         type: String,
+//     },
+//     email: {
+//         type: String,
+//     }, 
+//     education: [
+//         {
+//             qualification: {
+//                 type: String,
+//             }
+//         }
+//     ],
+// })

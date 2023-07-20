@@ -18,13 +18,13 @@ const Products = () => {
     const alert = useAlert();
 
     const queryParams = new URLSearchParams(window.location.search)
-    const cate = queryParams.get("category")
+    let cate = queryParams.get("category")
 
     const [currentPage, setCurrentPage] = useState(1);
     const [price, setPrice] = useState([0, 25000]);
     const [category, setCategory] = useState("");
     const [ratings, setRatings] = useState(0);
-    const [hcat, setHCat] = useState(cate);
+    // const [hcat, setHCat] = useState(cate);
 
     const { products, loading, error, productsCount, resultPerPage, filteredProductsCount } = useSelector((state) => state.products);
 
@@ -38,6 +38,11 @@ const Products = () => {
         setPrice(newPrice)
     }
 
+    const categorySetting = (category) =>{
+        setCategory(category);
+        // cate = null;
+    }
+
     let count = filteredProductsCount;
 
     useEffect(() => {
@@ -46,16 +51,19 @@ const Products = () => {
             alert.show(error);
             dispatch(clearErrors());
         } 
-        if(hcat != null && category !== hcat){
-            setCategory(hcat);
-        } 
+        // if(cate !== null){ 
+        //     setCategory(cate);
+        // }  
+        if(cate){
+            setCategory(cate)
+        }
 
         dispatch(getProduct(keyword, currentPage, price, category, ratings));
-        if(hcat != null && category !== hcat){
-            setHCat(null)
-        } 
+        // if(hcat != null && category !== hcat){
+        //     setHCat(null)
+        // } 
         
-    }, [dispatch, hcat, keyword, currentPage, price, category, ratings, error, alert, cate])
+    }, [dispatch, keyword, currentPage, price, category, ratings, error, alert, cate])
     // console.log(count);
     return ( 
         <Fragment>
@@ -90,7 +98,7 @@ const Products = () => {
                                         <li
                                           className='category-link'
                                           key={category}
-                                          onClick={()=> setCategory(category)}
+                                          onClick={()=>categorySetting(category)}
                                          >
                                             {category}
                                          </li> 
