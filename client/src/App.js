@@ -86,11 +86,11 @@ function App() {
           <Route exact path="/login" element={<Login />} />
           <Route path="/password/forgot" element={<ForgotPassword />} />
           <Route path="/password/reset/:token" element={<ResetPassword />} />
-          <Route path="/cart" element={<Cart />} />
+          <Route path="/cart" element={<Cart />} />  
           <Route path="/contact" element={<UserLocation />} />
           {/* <ProtectedRoute isAuthenticated={isAuthenticated} exact path="/account" element={<Profile />} /> */}
 
-          {isAuthenticated && <Route exact path="/account" element={<Profile />} />} 
+          {isAuthenticated && <Route exact path="/account" element={<Profile />} />}
 
           {isAuthenticated && <Route exact path="/me/update" element={<UpdateProfile />} />}
           {isAuthenticated && <Route exact path="/password/update" element={<UpdatePassword />} />}
